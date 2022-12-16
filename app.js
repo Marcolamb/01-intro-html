@@ -1,3 +1,6 @@
+
+
+
 const resumeCards = [
     {
         title: "Desarrollador JR.",

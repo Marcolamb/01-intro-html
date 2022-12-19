@@ -29,6 +29,11 @@ text-decoration: none;
     --transition: all ease 300ms;
 
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reglas Generales */
 body{
 
@@ -148,6 +153,13 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.home-img__container img{
+
+    width: 100%;
+    object-fit: contain;
 
 }
 
@@ -347,10 +359,6 @@ color: var(--color-primary);
     
   }
 
-.swiper-slide{
-    
-}
-
 
 /* Footer */
 
@@ -384,6 +392,36 @@ footer{
 /* Tablets */
 
 @media screen and (max-width:1024px){
+    /*Navbar*/
+
+    .navmenu__container{
+        display: none;
+
+    }
+    .navmenu__container.opened{
+        display: block;
+        position: absolute;
+        top: 75px;
+        background: rgba(0, 0, 0, .55);
+        padding: 1rem;
+        border-radius: 8px;
+        width: 62.5%;
+
+    }
+
+    .navmenu__container ul{
+        flex-direction: column;
+    }
+
+    .navmenu__container ul li a{
+        color: #ededed;
+        text-shadow: 0 0 6px rgba(0, 0, 0, .8);
+    }
+
+    .navmenu__container ul li:hover a{
+        background: var(--color-primary-alt);
+    }
+    
     /*Index*/
     .home__container{
         grid-template-columns: 1fr;
@@ -404,6 +442,11 @@ footer{
     .resume_cargo_container .resume_card:nth-child(3n-1){
         margin: auto;
     }
+
+    .swiper {
+        width: var(--container-lg);
+        
+      }
 
     /* Portfolio */
 

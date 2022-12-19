@@ -1,3 +1,11 @@
+const toggleBtn = document.querySelector('.toggle-button')
+const navmenuContainer = document.querySelector('.navmenu__container')
+
+toggleBtn.addEventListener('click', () => 
+    navmenuContainer.classList.toggle('opened')
+)
+
+
 const resumeCards = [
     {
         title: "Desarrollador JR.",
